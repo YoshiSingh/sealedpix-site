@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SealedPix Privacy and Support</title>
+<style>
+/* Layout: one calm reading column, privacy first, support below. */
+:root{--bg:#f6f7f9;--fg:#171a21;--muted:#5b6170;--line:#dde0e6;--accent:#2f5bd3;
+--display:"Fraunces",Georgia,serif;--body:"IBM Plex Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0d12;--fg:#e8eaf0;--muted:#9aa1b2;--line:#252a35;--accent:#7f9cff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0d12;--fg:#e8eaf0;--muted:#9aa1b2;--line:#252a35;--accent:#7f9cff;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font:600 2.2rem/1.15 var(--display);margin:0;text-wrap:balance}
+h2{font:600 1.35rem/1.25 var(--display);margin:0 0 6px;text-wrap:balance}
+h3{font-size:1rem;margin:0 0 4px}
+p,ul{margin:0}
+ul{padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+section{display:flex;flex-direction:column;gap:10px}
+.meta{color:var(--muted);font-size:.9rem}
+.part{border-top:1px solid var(--line);padding-top:28px;display:flex;flex-direction:column;gap:22px}
+a{color:var(--accent)}
+.mail{font-weight:600;user-select:all}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+</head>
+<body>
+<main>
+<header>
+<h1>SealedPix privacy policy</h1>
+<p class="meta">Westmere Meridian LLC · Last updated 7 November 2026</p>
+</header>
+
+<div class="part" id="privacy">
+<section><h2>The short version</h2>
+<p>SealedPix keeps your photos and videos on your iPhone, encrypted with your PIN. We have no server and no accounts, and we never see your photos.</p></section>
+
+<section><h2>What we collect</h2>
+<p>Nothing about you or your vault. SealedPix has no ads, no analytics, no tracking and no sign-up. It doesn’t send your photos, notes, cards, PIN or anything about you to us or anyone else.</p>
+<p>The only thing that leaves your phone is a purchase record if you buy Premium. See Purchases below.</p></section>
+
+<section><h2>How your photos are protected</h2>
+<p>Every photo, video, thumbnail, note and card is encrypted on your phone before it is saved, using XChaCha20-Poly1305. The key is locked with your PIN using Argon2id, which makes guessing PINs slow. Your PIN is never stored. Without it the files can’t be read, by us or by anyone who gets hold of your phone.</p>
+<p>Smart Sweep and search look at photos on your phone only. Nothing is uploaded to do this.</p></section>
+
+<section><h2>Backups</h2>
+<p>Your vault is left out of your iPhone’s iCloud backup. When you use Back up now, SealedPix makes one encrypted file that only opens with your 24-word recovery key, and you choose where to keep it, such as iCloud Drive. If you set up NAS backup, SealedPix sends the same encrypted files to the NAS you choose, and nowhere else.</p></section>
+
+<section><h2>Purchases</h2>
+<p>If you buy Premium, Apple handles the payment. SealedPix uses RevenueCat to check whether you have Premium. RevenueCat receives a random ID made for this app and your App Store purchase record. It never receives your name, email or anything from your vault, and the data isn’t used for advertising or tracking. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat’s privacy policy</a>.</p></section>
+
+<section><h2>Permissions</h2>
+<ul>
+<li><strong>Photos:</strong> to bring in the photos you choose, delete the originals if you ask, and save photos back when you take them out.</li>
+<li><strong>Camera:</strong> to take photos straight into your vault, scan IDs and cards into your Wallet, and for Intruder photo if you turn it on. These photos are encrypted and stay on your phone.</li>
+<li><strong>Face ID:</strong> only to unlock, if you turn it on. Apple handles your face data; SealedPix never sees it.</li>
+<li><strong>Local network:</strong> only to reach your own NAS, if you set up NAS backup.</li>
+</ul></section>
+
+<section><h2>Deleting your data</h2>
+<p>Deleting SealedPix from your phone deletes the vault with it. Backup files you saved elsewhere stay where you put them until you delete them.</p></section>
+
+<section><h2>Children</h2>
+<p>SealedPix collects no personal data from anyone, including children.</p></section>
+
+<section><h2>Changes and contact</h2>
+<p>If this policy changes, we will update this page and the copy inside the app. Questions: <span class="mail">westmeremeridian@gmail.com</span></p></section>
+</div>
+
+<div class="part" id="support">
+<h1>Support</h1>
+<p>Email <span class="mail">westmeremeridian@gmail.com</span> with any question. The app’s own Help page (Settings &gt; Help) covers every feature.</p>
+
+<section><h3>I forgot my PIN</h3>
+<p>Nobody can open your vault without your PIN, not even us, so a forgotten PIN can’t be reset. If Face ID is on, you can still open the vault with it and save your photos back to Photos.</p></section>
+
+<section><h3>Moving to a new phone</h3>
+<p>Use Settings &gt; Move to a new phone to send your vault with AirDrop. Or make a backup with Settings &gt; Back up now, then on the new phone tap “Restore from a backup” and type your 24-word recovery key.</p></section>
+
+<section><h3>Restoring Premium</h3>
+<p>Open Settings &gt; Get Premium and tap Restore purchases, signed in with the same Apple ID you bought with.</p></section>
+
+<section><h3>Cancelling a subscription</h3>
+<p>Open your iPhone’s Settings, tap your name, then Subscriptions, and choose SealedPix. Cancel at least 24 hours before it renews.</p></section>
+
+<section><h3>Deleted something by mistake</h3>
+<p>Deleted photos wait in Recently Deleted for 30 days. Open it from the albums screen to put them back.</p></section>
+</div>
+</main>
+</body>
+</html>
