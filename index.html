@@ -29,20 +29,22 @@ a{color:var(--accent)}
 <main>
 <header>
 <h1>SealedPix privacy policy</h1>
-<p class="meta">Westmere Meridian LLC · Last updated 7 November 2026</p>
+<p class="meta">Westmere Meridian LLC · Last updated 15 November 2026</p>
 </header>
 
 <div class="part" id="privacy">
 <section><h2>The short version</h2>
-<p>SealedPix keeps your photos and videos on your iPhone, encrypted with your PIN. We have no server and no accounts, and we never see your photos.</p></section>
+<p>SealedPix keeps your photos, videos, notes, IDs and crypto wallets on your iPhone, encrypted with your PIN. We have no server and no accounts, and we never see anything you keep in it.</p></section>
 
 <section><h2>What we collect</h2>
-<p>Nothing about you or your vault. SealedPix has no ads, no analytics, no tracking and no sign-up. It doesn’t send your photos, notes, cards, PIN or anything about you to us or anyone else.</p>
+<p>Nothing about you or your vault. SealedPix has no ads, no analytics, no tracking and no sign-up. It doesn’t send your photos, notes, cards, crypto wallets, PIN or anything about you to us or anyone else.</p>
 <p>The only thing that leaves your phone is a purchase record if you buy Premium. See Purchases below.</p></section>
 
 <section><h2>How your photos are protected</h2>
-<p>Every photo, video, thumbnail, note and card is encrypted on your phone before it is saved, using XChaCha20-Poly1305. The key is locked with your PIN using Argon2id, which makes guessing PINs slow. Your PIN is never stored. Without it the files can’t be read, by us or by anyone who gets hold of your phone.</p>
-<p>Smart Sweep and search look at photos on your phone only. Nothing is uploaded to do this.</p></section>
+<p>Every photo, video, thumbnail, note, card and crypto wallet (including recovery phrases and private keys) is encrypted on your phone before it is saved, using XChaCha20-Poly1305. The key is locked with your PIN using Argon2id, which makes guessing PINs slow. Your PIN is never stored. Without it the files can’t be read, by us or by anyone who gets hold of your phone.</p>
+<p>Smart Sweep and search look at photos on your phone only. Nothing is uploaded to do this.</p>
+<p>When you copy a detail such as a card number or a recovery phrase, it’s copied to this phone only, not to your other Apple devices, and forgotten after a minute.</p>
+<p>Photos you send to SealedPix with the Share button wait in a folder only SealedPix can open, protected while your phone is locked and left out of backups, until you next unlock your vault. Then they’re encrypted and the waiting copies are deleted.</p></section>
 
 <section><h2>Backups</h2>
 <p>Your vault is left out of your iPhone’s iCloud backup. When you use Back up now, SealedPix makes one encrypted file that only opens with your 24-word recovery key, and you choose where to keep it, such as iCloud Drive. If you set up NAS backup, SealedPix sends the same encrypted files to the NAS you choose, and nowhere else.</p></section>
@@ -85,7 +87,13 @@ a{color:var(--accent)}
 <p>Open your iPhone’s Settings, tap your name, then Subscriptions, and choose SealedPix. Cancel at least 24 hours before it renews.</p></section>
 
 <section><h3>Deleted something by mistake</h3>
-<p>Deleted photos wait in Recently Deleted for 30 days. Open it from the albums screen to put them back.</p></section>
+<p>Deleted photos wait in Recently Deleted for 30 days. Open it from the albums screen to put them back. Notes, Wallet cards and crypto wallets are deleted for good, which is why SealedPix asks you to type “delete” first.</p></section>
+
+<section><h3>I forgot an album’s extra code</h3>
+<p>Tap “Forgot the code?” and enter your vault PIN. The album (or Notes, Wallet or Crypto) opens, and its extra code is removed so it asks for your PIN instead.</p></section>
+
+<section><h3>Where did the app go on my home screen?</h3>
+<p>On your home screen SealedPix is called SPX. If you chose a disguise icon in Settings &gt; App icon, it looks like that icon instead, such as a calculator.</p></section>
 </div>
 </main>
 </body>
